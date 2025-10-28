@@ -1,0 +1,240 @@
+<html>
+<title>Mein Restaurant</title>
+ <meta charset="utf-8">
+
+
+<head>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .myBody {
+      margin: 0px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .atf-image {
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      padding-left: 2300px;
+
+
+    }
+
+
+    .pacifico {
+      font-family: "Pacifico", cursive;
+    }
+
+    .main-container {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      font-size: 48px;
+      left: 0;
+      right: 0;
+      height: 800px;
+      color: white;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .menu {
+      position: absolute;
+      padding-left: 1000px;
+      top: 30px;
+      text-align: center;
+
+    }
+
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 30px;
+    }
+
+    .menu a:hover {
+      color: blue;
+    }
+
+    .order-btn {
+      background-color: blue;
+      padding: 0px;
+    }
+
+    .order-btn:hover {
+      background: #9191e5;
+    }
+
+    .container {
+      padding-left: 100px;
+      background-color: rgba(0, 0, 0, 0);
+      top: 100px;
+      margin-bottom: 64px;
+      font-size: 20px;
+    }
+
+    .googlemaps {
+      height: 450px;
+      width: 35%;
+    }
+
+
+    .footer {
+      background-color: rgba(35, 38, 42);
+      color: white;
+      justify-content: space-between;
+      margin: 0px;
+    }
+
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 0px;
+    }
+
+
+    .footer-link:hover {
+      text-decoration: underline;
+      color: orange;
+    }
+
+
+    .container-link {
+      color: orange;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .container-link:hover {
+      text-decoration: underline;
+      color: orange;
+    }
+
+    h1 {
+      color: #316491;
+      filter: drop-shadow(17px 7px 6px black);
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+>
+
+  <div class="main-container">
+    <h1>Herzlich Wilkommen</h1>
+    <b>zu meinem Restaurant</b>
+  </div>
+
+  <div class="menu">
+    <a href="#contact">RESERVIEREN</a>
+    <a class="order-btn" href="#">BESTELLEN</a>
+    <a href="#contact">KONTAKT</a>
+    <a href="#adress">ANFAHRT</a>
+  </div>
+
+  <br>
+  <div class="container">
+    <h2 class="pacifico">unsere Öffnungszeiten</h2>
+
+    <table>
+      <tr>
+        <td>Mo - Fr:</td>
+        <td>12:00 - 23:00 Uhr</td>
+      </tr>
+
+      <tr>
+        <td>Sa:</td>
+        <td>11:00 - 24:00 Uhr</td>
+      </tr>
+
+      <tr>
+        <td>So:</td>
+        <td>11:00 - 24:00 Uhr</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div class="container" id="adress">
+    <h2 class="Pacifico">Anfahrt</h2>
+    Unsere Adresse:
+    Herrengasse 18, 8750 Judenburg AT<br>
+
+
+    <iframe class="googlemaps"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1900.7285289259362!2d14.651978444950325!3d47.16898042596047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4771caf2dec27257%3A0xedf194b3fccc8e8d!2sEUROSPAR!5e1!3m2!1sde!2sat!4v1759313695183!5m2!1sde!2sat"" style="
+      border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="container">
+    <h2 class="Pacifico">Tageskarte</h2>
+    <table>
+
+      <tr>
+        <td>1</td>
+        <td>Pizza</td>
+        <td>11,95 €</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Schnitzel</td>
+        <td>14.99 €</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Pommes</td>
+        <td>6,99 €</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Kuchen</td>
+        <td>8.99 €</td>
+    </table>
+  </div>
+
+  <div class="container" id="contact">
+    Speisekarte <a href="./downloads/tageskarte.pdf" target="blank" class="container-link">"Herunterladen"</a>
+    <h2>Kontaktieren Sie uns:</h2><br>
+    Tel Nr: <a href="tel:0676/7875304" class="container-link" target="blank">0676/7875304</a><br>
+    Email: <a href="mailto:fabian.glanzer99@gmx.at" class="container-link">fabian.glanzer99@gmx.at</a><br>
+  </div>
+
+  <br>
+  <br>
+  <div class="container footer">
+    <div>
+      (c) Copyright 2023 Developer Akademie<br>
+    </div>
+
+    <div>
+      <a href="impressum.html" class="footer-link">Impressum</a> |
+      <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+    </div>
+</body>
+</div>
+
+</html>
